@@ -16,7 +16,7 @@ import { PhotoService } from './demo/service/photo.service';
     declarations: [AppComponent, NotfoundComponent],
     imports: [AppRoutingModule, AppLayoutModule],
     providers: [
-        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        { provide: LocationStrategy, useClass: PathLocationStrategy},
         CountryService,
         CustomerService,
         EventService,

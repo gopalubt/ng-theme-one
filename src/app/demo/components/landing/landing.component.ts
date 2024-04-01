@@ -10,4 +10,13 @@ export class LandingComponent {
 
     constructor(public layoutService: LayoutService, public router: Router) { }
     
+    onClickLogin(){
+        this.gotoUrl("/auth/login")
+    }
+    onClickRegister(){
+        this.gotoUrl("/auth/register")
+    }
+    gotoUrl(url: string, params?: any){
+        this.router.navigate([url], {queryParams: params})
+    }
 }
